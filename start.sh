@@ -4,7 +4,7 @@ then
   git clone https://github.com/Hskdashing/DQhsk
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /DQhsk
+  git clone $UPSTREAM_REPO https://github.com/Hskdashing/DQhsk
 fi
 cd /DQTheFileDonorBot
 pip3 install -U -r requirements.txt
