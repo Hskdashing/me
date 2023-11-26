@@ -532,7 +532,7 @@ async def get_verify_shorted_link(num, link):
         except Exception as e:
             logger.error(e)
             return f'https://{URL}/shortLink?token={API}&format=json&link={link}'
-    else:p
+    else:
         url = f'https://{URL}/api'
         params = {'api': API,
                   'url': link,
