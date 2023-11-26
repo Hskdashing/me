@@ -490,13 +490,13 @@ async def get_shortlink(chat_id, link):
                         return data["shortenedUrl"]
                     else:
                         logger.error(f"Error: {data['message']}")
-                        if URL == 'clicksfly.com':
+                        if URL == 'urlshortx.com.com':
                             return f'https://{URL}/api?api={API}&url={link}'
                         else:
                             return f'https://{URL}/api?api={API}&link={link}'
         except Exception as e:
             logger.error(e)
-            if URL == 'clicksfly.com':
+            if URL == 'urlshortx.com':
                 return f'https://{URL}/api?api={API}&url={link}'
             else:
                 return f'https://{URL}/api?api={API}&link={link}'
@@ -532,7 +532,7 @@ async def get_verify_shorted_link(num, link):
         except Exception as e:
             logger.error(e)
             return f'https://{URL}/shortLink?token={API}&format=json&link={link}'
-    else:
+    else:p
         url = f'https://{URL}/api'
         params = {'api': API,
                   'url': link,
@@ -545,13 +545,13 @@ async def get_verify_shorted_link(num, link):
                         return data["shortenedUrl"]
                     else:
                         logger.error(f"Error: {data['message']}")
-                        if URL == 'clicksfly.com':
+                        if URL == 'urlshortx.com':
                             return f'https://{URL}/api?api={API}&url={link}'
                         else:
                             return f'https://{URL}/api?api={API}&link={link}'
         except Exception as e:
             logger.error(e)
-            if URL == 'clicksfly.com':
+            if URL == 'urlshortx.com':
                 return f'https://{URL}/api?api={API}&url={link}'
             else:
                 return f'https://{URL}/api?api={API}&link={link}'
@@ -658,7 +658,7 @@ async def send_all(bot, userid, files, ident):
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                         InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                     ],[
-                        InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
+                        InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/hskdashing")
                         ]
                     ]
                 )
